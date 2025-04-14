@@ -1,9 +1,12 @@
+import { FaGithub } from "react-icons/fa6";
+
 interface ProjectProps {
   title: string;
   description: string;
   tech: string[];
   image: string;
-  link: string;
+  github: string;
+  link?: string;
 }
 
 const ProjectCard = ({
@@ -11,6 +14,7 @@ const ProjectCard = ({
   description,
   tech,
   image,
+  github,
   link,
 }: ProjectProps) => {
   return (
@@ -19,7 +23,7 @@ const ProjectCard = ({
       <img
         src={image}
         alt={title}
-        className="w-full max-w-[350px] h-auto object-cover rounded-md"
+        className="w-full max-w-[350px] h-auto object-contain rounded-md"
       />
 
       {/* 右側文字 */}
@@ -41,15 +45,27 @@ const ProjectCard = ({
           </div>
         </div>
 
-        {/* 按鈕 */}
-        <div className="mt-4">
+        <div className="flex items-center gap-x-4 mt-4">
+          {/* GitHub 按鈕 */}
           <a
-            href={link}
+            href={github}
             target="_blank"
-            className="text-blue-600 font-medium hover:underline"
+            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-800 shadow-sm transition"
           >
-            Check Live Site ↗
+            <FaGithub className="text-xl" />
+            GitHub
           </a>
+
+          {/* 只有有提供 link 才顯示 */}
+          {link && (
+            <a
+              href={link}
+              target="_blank"
+              className="text-blue-600 font-medium hover:underline"
+            >
+              Check Live Site ↗
+            </a>
+          )}
         </div>
       </div>
     </div>

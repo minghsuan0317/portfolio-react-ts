@@ -1,6 +1,10 @@
 const Hero = () => {
   return (
-    <section className="w-full min-h-screen flex items-center justify-center relative px-6 overflow-hidden">
+    <section
+      id="home"
+      className="w-full min-h-screen flex items-center justify-center relative px-6 overflow-hidden pt-28
+"
+    >
       {/* Hero 圓背景 + 插圖 + 標題包在一起 */}
       <div className="relative flex flex-col items-center justify-center z-10  w-full">
         {/* 藍色圓背景 */}
