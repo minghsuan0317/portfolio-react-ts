@@ -13,7 +13,6 @@ export const projects = [
     ],
     image: "/images/techteam-web-prototype.png",
     github: "https://github.com/minghsuan0317/techteam-react-ts",
-    link: "https://your-demo-link.com",
   },
   {
     title: "Pharmacy CLI",
