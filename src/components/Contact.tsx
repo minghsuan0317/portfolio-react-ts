@@ -60,6 +60,7 @@ const Contact = () => {
 
           {/* 右側：插圖 + 背景 + 按鈕 */}
           <div className="relative flex-1 flex flex-col items-center justify-end min-h-[500px]">
+            
             {/* 藍色半圓背景 */}
             <div className="absolute w-[800px] h-[800px] bg-blue-300 rounded-full bottom-0 left-1/2 -translate-x-1/4 translate-y-1/2 z-0 overflow-hidden" />
 
