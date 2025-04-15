@@ -62,14 +62,14 @@ const Contact = () => {
           <div className="relative flex-1 flex flex-col justify-end min-h-[500px]">
             {/* 插圖 */}
             <img
-              src="/images/ming-call.png"
+              src="/public/images/ming-call.png"
               alt="Ming call"
               className="object-contain absolute bottom-0 right-0"
             />
             {/* 按鈕 */}
             <a
               href="mailto:minghsuan0317@gmail.com"
-              className="absolute bottom-10 right-20 z-20 bg-orange-500 text-white px-8 py-4 rounded-full shadow-md hover:bg-orange-600 transition font-semibold"
+              className="absolute bottom-10 right-20 z-20 bg-orange-500 text-white px-6 py-2 rounded-full shadow-md hover:bg-orange-600 transition font-semibold w-auto whitespace-nowrap"
             >
               Hire Me ↗
             </a>
