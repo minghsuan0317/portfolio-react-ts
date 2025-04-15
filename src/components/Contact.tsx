@@ -62,7 +62,7 @@ const Contact = () => {
           <div className="relative flex-1 flex flex-col justify-end min-h-[500px]">
             {/* 插圖 */}
             <img
-              src="/public/images/ming-call.png"
+              src="/images/ming-call.png"
               alt="Ming call"
               className="object-contain absolute bottom-0 right-0"
             />

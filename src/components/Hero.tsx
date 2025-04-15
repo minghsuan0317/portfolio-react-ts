@@ -38,7 +38,7 @@ const Hero = () => {
             sense, and scale. Most of all, they solve real problems with care.
           </p>
           <a
-            href="public/CV.pdf"
+            href="/CV.pdf"
             download="minghsuanchen_CV.pdf"
             className="inline-block bg-black text-white px-6 py-2 rounded-full font-medium hover:bg-gray-500 transition"
           >
@@ -56,7 +56,7 @@ const Hero = () => {
         {/* Hero 圓背景 */}
         <div className="flex items-end h-full justify-center relative z-0">
           <img
-            src="/public/images/ming-hero.png"
+            src="/images/ming-hero.png"
             alt="Ming with background"
             className="w-screen-3/4 h-auto max-w-[600px] object-bottom"
           />
