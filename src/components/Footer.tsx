@@ -43,14 +43,14 @@ const Footer = () => {
             target="_blank"
             aria-label="WhatsApp"
           >
-            <FaWhatsapp className="hover:text-orange-600 transition" />
+            <FaWhatsapp className="hover:text-green-500 transition" />
           </a>
           <a
             href="https://github.com/minghsuan0317"
             target="_blank"
             aria-label="GitHub"
           >
-            <FaGithub className="hover:text-gray-700 transition" />
+            <FaGithub className="hover:text-orange-600 transition" />
           </a>
           <a
             href="https://www.linkedin.com/in/ming-hsuan-chen"

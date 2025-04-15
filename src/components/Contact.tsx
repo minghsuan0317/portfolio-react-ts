@@ -4,12 +4,12 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="bg-neutral-900 pt-20 pb-12 flex justify-center"
+      className="bg-black pt-20 pb-12 pl-20 pr-20 flex justify-center"
     >
-      <div className="bg-white w-full max-w-6xl rounded-3xl px-10 z-2 relative overflow-hidden">
+      <div className="bg-white w-full max-w-6xl rounded-3xl pl-10 z-2 relative overflow-hidden">
         {/* 上方標題：置中獨立一行 */}
         <div className="text-center mb-18">
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text mt-16 ">
+          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text mt-10 ">
             Contact with me
           </h2>
         </div>
@@ -59,22 +59,17 @@ const Contact = () => {
           </div>
 
           {/* 右側：插圖 + 背景 + 按鈕 */}
-          <div className="relative flex-1 flex flex-col items-center justify-end min-h-[500px]">
-            
-            {/* 藍色半圓背景 */}
-            <div className="absolute w-[800px] h-[800px] bg-blue-300 rounded-full bottom-0 left-1/2 -translate-x-1/4 translate-y-1/2 z-0 overflow-hidden" />
-
+          <div className="relative flex-1 flex flex-col justify-end min-h-[500px]">
             {/* 插圖 */}
             <img
               src="/images/ming-call.png"
               alt="Ming call"
-              className="w-64 md:w-80 object-contain absolute left-1/3 bottom-0 z-10"
+              className="object-contain absolute bottom-0 right-0"
             />
-
-            {/* 按鈕：往下移開圖片底部 */}
+            {/* 按鈕 */}
             <a
               href="mailto:minghsuan0317@gmail.com"
-              className="relative z-20 mt-2 bg-orange-500 text-white px-8 py-4 rounded-full shadow-md hover:bg-orange-600 transition font-semibold ml-32 mb-10"
+              className="absolute bottom-10 right-20 z-20 bg-orange-500 text-white px-8 py-4 rounded-full shadow-md hover:bg-orange-600 transition font-semibold"
             >
               Hire Me ↗
             </a>

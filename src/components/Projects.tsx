@@ -5,12 +5,12 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="bg-neutral-900 py-12 px-4 rounded-tl-3xl rounded-tr-3xl relative z-10"
+      className="bg-black py-12 px-4 pl-20 pr-20 rounded-tl-3xl rounded-tr-3xl relative z-0"
     >
       <div className="max-w-6xl mx-auto">
         {/* Recent Work 標題區塊 */}
         <div className="text-center my-16">
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text">
+          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">
             Recent Work
           </h2>
           <p className="text-white text-lg mt-2">
@@ -18,7 +18,7 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="space-y-8">
+        <div className="space-y-10">
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
