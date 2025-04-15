@@ -29,7 +29,7 @@ const Projects = () => {
           <a
             href="https://github.com/minghsuan0317"
             target="_blank"
-            className="bg-blue-500 text-white px-6 py-3 rounded-full font-medium hover:bg-blue-600 transition"
+            className="bg-primary text-white px-6 py-3 rounded-full font-medium hover:bg-blue-600 transition"
           >
             See more on GitHub ↗
           </a>
