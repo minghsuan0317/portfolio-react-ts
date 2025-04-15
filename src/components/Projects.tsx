@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="bg-black py-12 px-4 pl-20 pr-20 rounded-tl-3xl rounded-tr-3xl relative z-0"
+      className="bg-black p-8 md:p-20 rounded-tl-3xl rounded-tr-3xl relative z-0"
     >
       <div className="max-w-6xl mx-auto">
         {/* Recent Work 標題區塊 */}

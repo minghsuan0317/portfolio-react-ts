@@ -23,17 +23,17 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="w-full min-h-screen flex justify-center relative px-6 pt-28"
+      className="flex w-full min-h-screen justify-center relative px-6 pt-28"
     >
-      <div className="max-w-6xl w-full grid grid-cols-3 gap-8 text-left">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-6xl w-full text-left">
         {/* 左側文字內容 */}
-        <div className="space-y-4 max-w-md relative z-10 pt-[35vh]">
+        <div className="space-y-4 max-w-md relative z-10 pt-[5vh] sm:pt-[35vh]">
           <p className="text-sm font-semibold text-gray-600 ">
             <FaQuoteLeft className="text-2xl text-gray-800 mb-3" />I design. I
             debug. I make ideas happen.
           </p>
           <p className="text-sm text-gray-700">
-            x I build things that (hopefully) make people’s lives easier. I like
+            I build things that (hopefully) make people’s lives easier. I like
             turning messy ideas into real stuff. Things that actually work, make
             sense, and scale. Most of all, they solve real problems with care.
           </p>
@@ -53,17 +53,22 @@ const Hero = () => {
           </a>
         </div>
 
-        {/* Hero 圓背景 */}
+        {/* 圖 */}
         <div className="flex items-end h-full justify-center relative z-0">
           <img
             src="/images/ming-hero.png"
             alt="Ming with background"
-            className="w-screen-3/4 h-auto max-w-[600px] object-bottom"
+            className="hidden sm:block w-screen-3/4 h-auto max-w-[600px] object-bottom"
+          />
+          <img
+            src="/images/ming-hero.png"
+            alt="Ming with background mobile"
+            className="w-full sm:hidden"
           />
         </div>
 
         {/* 右邊：技能區塊 */}
-        <div className="relative z-10  pt-[35vh]">
+        <div className="hidden sm:block relative z-10  pt-[35vh]">
           <div className="flex flex-wrap justify-center gap-2.5">
             <SkillItem
               icon={<SiTypescript className="text-blue-600" />}
