@@ -23,9 +23,40 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="hidden md:flex w-full min-h-screen justify-center relative px-6 pt-28"
+      className="flex w-full min-h-screen justify-center relative px-6 pt-28"
     >
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-6xl w-full text-left ">
+            {/* 手機版 Hero */}
+      <div className="block md:hidden">
+        {/* 手機優先單欄布局，隱藏在 md 及以上 */}
+        <div className="flex flex-col items-center text-center space-y-4">
+          <p className="text-sm font-semibold text-gray-600">
+            <FaQuoteLeft className="mx-auto text-2xl text-gray-800 mb-2" />
+            I design. I debug. I make ideas happen.
+          </p>
+          <p className="text-sm text-gray-700 px-2">
+            I build things that (hopefully) make people’s lives easier. I like turning messy ideas into real stuff. Things that actually work, make sense, and scale.
+          </p>
+          <img
+            src="/images/ming-hero.png"
+            alt="Ming mobile"
+            className="w-3/4 h-auto object-contain mx-auto"
+          />
+          <a
+            href="/CV.pdf"
+            download="minghsuanchen_CV.pdf"
+            className="block bg-black text-white px-6 py-2 rounded-full font-medium hover:bg-gray-500 transition w-3/4 mx-auto"
+          >
+            Download CV
+          </a>
+          <a
+            href="#contact"
+            className="block bg-orange-500 text-white px-6 py-2 rounded-full shadow hover:bg-orange-600 transition font-semibold w-3/4 mx-auto"
+          >
+            Hire Me ↗
+          </a>
+        </div>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-6xl w-full text-left">
         {/* 左側文字內容 */}
         <div className="space-y-4 max-w-md relative z-10 pt-[5vh] sm:pt-[35vh]">
           <p className="text-sm font-semibold text-gray-600 ">
@@ -58,17 +89,17 @@ const Hero = () => {
           <img
             src="/images/ming-hero.png"
             alt="Ming with background"
-            className="w-screen-3/4 h-auto max-w-[600px] object-bottom"
+            className="hidden sm:block w-screen-3/4 h-auto max-w-[600px] object-bottom"
           />
           <img
-            src="/images/ming-hero-mobile.png"
+            src="/images/ming-hero.png"
             alt="Ming with background mobile"
             className="w-full sm:hidden"
           />
         </div>
 
         {/* 右邊：技能區塊 */}
-        <div className="relative z-10  pt-[35vh]">
+        <div className="hidden sm:block relative z-10  pt-[35vh]">
           <div className="flex flex-wrap justify-center gap-2.5">
             <SkillItem
               icon={<SiTypescript className="text-blue-600" />}
